@@ -1,68 +1,74 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@theme {
+  /* Background colors */
+  --color-primary-bg: var(--bg-primary);
+  --color-secondary-bg: var(--bg-secondary);
+
+  /* Text colors */
+  --color-primary: var(--text-primary);
+  --color-secondary: var(--text-secondary);
+  --color-tertiary: var(--text-tertiary);
+  --color-quaternary: var(--text-quaternary);
+
+  /* button colors */
+  --color-button: var(--button);
+
+  /* Accent colors */
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-secondary: var(--accent-secondary);
+
+  /* Gradient colors */
+  --color-gradient-start: var(--gradient-start);
+  --color-gradient-end: var(--gradient-end);
+}
+
+/* Theme variables */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    /* Background colors */
+    --bg-primary: #ffffff;           /* main page background, sections */
+    --bg-secondary: #f3f4f6;         /* secondary page background, sections */
+    
+    /* Text colors */
+    --text-primary: #E1E7EF;         /* main text */
+    --text-secondary: #6B7280;       /* secondary text */
+    --text-tertiary: #374151;        /* tertiary text */
+    --text-quaternary: #111827;      /* quaternary text */
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    /* Button colors */
+    --button: #bad0f5;               /* button */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    /* Accent colors */
+    --accent-primary: #65799c;       /* primary accent */
+    --accent-secondary: #bad0f5;     /* secondary accent */
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+    /* Gradient colors */
+    --gradient-start: #bad0f5;       /* gradient start */
+    --gradient-end: #a2a8b1;         /* gradient end */
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
+.dark {
+    /* Background colors */
+    --bg-primary: #0B111D;           /* dark main page background, sections */
+    --bg-secondary: #030711;         /* dark secondary page background, sections */
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+    /* Text colors */
+    --text-primary: #E1E7EF;         /* dark main text */
+    --text-secondary: #9CA3AF;       /* dark secondary text */
+    --text-tertiary: #7D8390;        /* dark tertiary text */
+    --text-quaternary: #0A0E23;      /* dark quaternary text */
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+    /* Button colors */
+    --button: #030711;               /* dark mode button */
+
+    /* Accent colors */
+    --accent-primary: #1F2937;       /* dark mode primary accent */
+    --accent-secondary: #3C83F6;     /* dark mode secondary accent */
+
+    /* Gradient colors */
+    --gradient-start: #3D82F5;       /* dark mode gradient start */
+    --gradient-end: #8e51ff;         /* dark mode gradient end */
 }
