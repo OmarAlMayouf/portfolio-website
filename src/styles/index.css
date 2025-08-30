@@ -21,6 +21,9 @@
   --color-accent-primary: var( --accent-primary );
   --color-accent-secondary: var( --accent-secondary );
 
+  /* Card colors */
+  --color-card: var( --card );
+
   /* Gradient colors */
   --color-gradient-start: var( --gradient-start );
   --color-gradient-end: var( --gradient-end );
@@ -43,8 +46,11 @@
         --button: #f8fafc;               /* button */
 
         /* Accent colors */
-        --accent-primary: #EDECF8;       /* primary accent */
+        --accent-primary: #dddddd;       /* primary accent */
         --accent-secondary: #7b6ce9;     /* secondary accent */
+
+        /* Card colors */
+        --card: #ffffff;                  /* card background */
 
         /* Gradient colors */
         --gradient-start: #3D82F5;       /* gradient start */
@@ -68,6 +74,9 @@
         /* Accent colors */
         --accent-primary: #1F2937;       /* dark mode primary accent */
         --accent-secondary: #3C83F6;     /* dark mode secondary accent */
+
+        /* Card colors */
+        --card: #030711;                  /* dark mode card background */
 
         /* Gradient colors */
         --gradient-start: #3D82F5;       /* dark mode gradient start */
