@@ -45,14 +45,16 @@ export default function Navbar() {
                   className="relative"
                 >
                   <a
-                    href="#"
+                    // href={`#${item.section}`}
                     className={`block py-2 px-3 active:text-accent-secondary ${
                       activeSection === item.section ? "text-accent-secondary" : "text-primary"
                     }`}
                     onClick={e => {
                       e.preventDefault();
                       setActiveSection(item.section);
-                      window.scrollTo({ top: 0, behavior: 'smooth' });
+                      const section = document.getElementById(item.section);
+                      if ( section )
+                        section.scrollIntoView({ behavior: 'smooth' });
                     }}
                   >
                     <div className="px-4 p-2 rounded-lg hover:bg-primary/5">

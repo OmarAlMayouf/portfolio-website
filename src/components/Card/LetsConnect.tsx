@@ -12,7 +12,7 @@ export default function LetsConnect() {
           <Fields
             icon={<Icons.Email height={24} width={24} strokeWidth={3} />}
             title="Email"
-            description="Omar@example.com"
+            description="Omaralmayouf@gmail.com"
           />
           <Fields
             icon={<Icons.Location height={24} width={24} strokeWidth={3} />}

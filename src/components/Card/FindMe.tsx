@@ -1,4 +1,4 @@
-import Socials from "../Feilds/Socials";
+import Socials from "../Button/Socials";
 import MainCard from "./MainCard";
 
 export default function FindMe() {

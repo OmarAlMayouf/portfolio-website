@@ -95,3 +95,26 @@
   background: #373658;
   color: #fff;
 }
+
+body {
+  background-color: var( --color-primary-bg );
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: var( --bg-primary );
+}
+
+::-webkit-scrollbar-thumb {
+  background: var( --bg-secondary );
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var( --bg-primary );
+}
+
+html {
+  scrollbar-color: var( --accent-primary ) var( --bg-primary );
+  scrollbar-width: thin;
+}

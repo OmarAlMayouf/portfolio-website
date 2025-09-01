@@ -12,7 +12,7 @@ interface CardProps {
 
 export default function MainCard({ title, description, photo, labels, buttons, children }: CardProps) {
   return (
-    <div className="shadow-lg hover:shadow-xl transition-all ease-in-out duration-300  border border-accent-primary bg-card rounded-2xl container">
+    <div className="shadow-lg hover:shadow-xl transition-all ease-in-out duration-300  dark:border border-accent-primary bg-card rounded-2xl container">
 
       {photo && (
         <div className="p-5 rounded-t-2xl">
@@ -26,7 +26,7 @@ export default function MainCard({ title, description, photo, labels, buttons, c
 
       <div className="px-10 py-10">
         
-        <h3 className="text-2xl font-bold">{title}</h3>
+        <h3 className="text-2xl text-primary font-bold">{title}</h3>
         
         {description && <p className="mt-2 text-sm text-tertiary font-semibold">{description}</p>}
         

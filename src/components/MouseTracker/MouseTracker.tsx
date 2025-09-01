@@ -10,8 +10,8 @@ export default function MouseTracker() {
     <div
       key={`${position.x}-${position.y}`}
       className={
-        "pointer-events-none fixed w-40 h-40 rounded-full " +
-        "bg-primary opacity-15 mix-blend-screen blur-3xl"
+        "hidden dark:block pointer-events-none fixed w-40 h-40 rounded-full " +
+        "bg-primary/50 opacity-10 mix-blend-screen blur-3xl"
       }
       style={{
         left: position.x,
