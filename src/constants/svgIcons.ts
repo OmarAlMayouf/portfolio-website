@@ -7,6 +7,7 @@ import { Moon } from "../assets/icons/Moon";
 import { Phone } from "../assets/icons/Phone";
 import { External_Link } from "../assets/icons/External_Link";
 import { Sun } from "../assets/icons/Sun";
+import { Menu } from "../assets/icons/Menu";
 
 export const Icons = {
   Email,
@@ -18,4 +19,5 @@ export const Icons = {
   Phone,
   External_Link,
   Sun,
+  Menu,
 };

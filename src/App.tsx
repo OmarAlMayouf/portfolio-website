@@ -1,6 +1,3 @@
-import { useTheme } from "./context/ThemeContext";
-import Button from "./components/Button/Button";
-import GradientText from "./components/GradientText/GradientText";
 import MouseTracker from "./components/MouseTracker/MouseTracker";
 import FilterButton from "./components/Button/FilterButton";
 import { useState } from "react";
@@ -9,14 +6,17 @@ import LetsConnect from "./components/Card/LetsConnect";
 import FindMe from "./components/Card/FindMe";
 import ProjectCard from "./components/Card/ProjectCard";
 import Socials from "./components/Feilds/Socials";
-import ThemeToggle from "./components/Button/ThemeToggle";
 import ContactForm from "./components/FormFeild/ContactForm";
+import Navbar from "./components/Navbar/Navbar";
+import MainLogo from "./components/Logo/MainLogo";
 
 function App() {
-  const { toggleTheme } = useTheme();
   const [activeFilter, setActiveFilter] = useState("All Projects");
   return (
-    <div className="min-h-screen flex items-center justify-center bg-primary-bg text-primary transition-colors duration-500">
+  <div className="bg-primary-bg h-full min-h-screen ">
+    <Navbar />
+    <div className="pt-28 flex items-center justify-center text-primary transition-colors duration-500">
+
 
       <MouseTracker />
 
@@ -24,10 +24,8 @@ function App() {
         
         <div className="flex flex-col items-center gap-2">
 
-          <GradientText text="Omar AlMayouf" className="py-6 text-6xl font-bold" />
-
-          <ThemeToggle />
-
+          <MainLogo />
+          
           <p className="text-3xl font-semibold text-secondary">
             Full Stack Developer
           </p>
@@ -37,16 +35,6 @@ function App() {
           </p>
 
           <Socials />
-        </div>
-
-        <div className="flex w-full gap-4">
-          <Button onClick={toggleTheme} variant="primary">
-            Toggle Dark Mode
-          </Button>
-
-          <Button onClick={toggleTheme} variant="secondary">
-            Toggle Dark s
-          </Button>
         </div>
 
         <div className="flex gap-4">
@@ -96,6 +84,7 @@ function App() {
 
       </div>
     </div>
+  </div>
   );
 }
 
